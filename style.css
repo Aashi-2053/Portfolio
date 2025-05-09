@@ -74,6 +74,7 @@ body{
 .navbar .active{
     color:rgb(94, 236, 247);
 }
+
 #menu-icon{
 font-size: 3rem;
 color: #00eeff;
@@ -604,14 +605,9 @@ content : "75%";
     min-height: auto;
     padding-bottom: 4rem;
 }
-.education .education-row{
-    
-    
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
+
 .education-column{
-    width: 600px;
+    width: 900px;
     height: auto ;
     padding-left: 6rem;
     padding-right: 2rem; 
@@ -667,79 +663,23 @@ content : "75%";
 .contact .heading span{
     color: #0ef;
 }
-.contact form{
-    max-width: 50rem;
-    margin: 0 auto;
-    text-align: center;
+.contact .port-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
 }
-.contact form .input-box{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contact .contact-item-inner{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    
 }
-.contact form .input-box .input-field{
-    position: relative;
-    width: 49%;
-    margin: .8rem 0;
-}
-.contact form .input-box .input-field input,
-.contact form .textarea-field textarea{
-width: 100%;
-height: 100%;
-padding: 1.5rem;
-font-size: 1rem;
-color: #00eeff;
-background: transparent;
-border-radius: .6rem;
-border: .18rem solid #0ef;
-}
-.contact form .input-box .input-field input::placeholder,
-.contact form .textarea-field textarea::placeholder{
-    color: #909ba2;
-}
-.contact form .textarea-field{
-    position: relative;
-    margin: .8rem 0 2.7rem;
-    display: flex;
-}
-.contact form .textarea-field textarea{
-    resize: none;
-}
-.contact form .btn-box.btns .btn{
-    cursor: pointer;
-}
-.contact form .focus{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    border-radius: .6rem;
-    z-index: -1;
-}
-.contact form .input-box .input-field input:focus~.focus,
-.contact form .input-box .input-field input:valid~.focus,
-.contact form .textarea-field textarea:focus~.focus,
-.contact form .textarea-field textarea:valid~.focus{
-    width: 100%;
-}
-.btn-sub{
-    margin-bottom: 2rem;
-}
-.btn-sub .btn-sub{
-    display: inline-block;
-    padding: 12px 28px;
-    background: rgb(94, 236, 247);
-    border-radius: 40px;
-    font-size: 16px;
-    color:#081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-   
-}
+
+
 
 .footer{
     display: flex;
